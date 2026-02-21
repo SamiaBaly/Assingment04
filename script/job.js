@@ -1,6 +1,14 @@
-console.log("hello js");
 
+let interviewList = [];
+let rejectList = [];
 let totalCount = document.getElementById("total-count");
-console.log(totalCount.innerText);
+let interviewCount = document.getElementById("interview-count");
+let rejectedCount = document.getElementById("rejected-count");
+
 let cardCount = document.getElementById("card-count");
-console.log(cardCount.length)
+
+
+function calculateCount() {
+  totalCount.innerText = cardCount.children.length;
+}
+calculateCount();
