@@ -46,7 +46,6 @@ function toggolNoJobCard() {
     showCount = rejectList.length;
     sideTotalCount.innerText = `${showCount} of ${cardCount.children.length}`;
   } else {
-    showCount = cardCount.children.length;
     sideTotalCount.innerText = `${cardCount.children.length}`;
   }
 
