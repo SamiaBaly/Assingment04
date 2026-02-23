@@ -41,10 +41,13 @@ function toggolNoJobCard() {
   let showCount = 0;
   if (currentStatus === 'interview-btn') {
     showCount = interviewList.length;
+    sideTotalCount.innerText = `${showCount} of ${cardCount.children.length}`;
   } else if (currentStatus === 'reject-btn') {
     showCount = rejectList.length;
+    sideTotalCount.innerText = `${showCount} of ${cardCount.children.length}`;
   } else {
     showCount = cardCount.children.length;
+    sideTotalCount.innerText = `${cardCount.children.length}`;
   }
 
   if (showCount === 0) {
@@ -52,7 +55,7 @@ function toggolNoJobCard() {
   } else {
     noJob.classList.add('hidden');
   }
-  sideTotalCount.innerText = `${showCount} of ${cardCount.children.length}`
+ 
 };
 
 
